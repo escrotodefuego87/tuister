@@ -1,0 +1,27 @@
+<div ng-include="'header.html'"></div>
+<article class="container-fluid">
+    <h1>Iniciar Sesion</h1>
+
+        <section class="row">
+            <section class="col-md-6  offset-md-3">
+            <form>
+            <div class="form-group">
+                <label>Usuario</label>
+                <input type="text" class="form-control" ng-model="usuario.nickname" placeholder="Nickname">
+            </div>
+            <div class="form-group">
+                <label>Contrasena</label>
+                <input type="password" class="form-control" ng-model="usuario.password" placeholder="Contrasena">
+            </div>
+
+            <label>No tienes cuenta?</label>
+            <a href="#/crearCuenta">Crear cuenta</a> <br>
+            <button class="btn btn-primary" ng-click="iniciarSesion()">Login</button>
+            </form>
+                
+        </section>
+    </section>
+</article>
+
+
+      

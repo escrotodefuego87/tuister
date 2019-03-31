@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="CSS/bootstrap.min.css">
+
+<div class="container">
+    <div class="col-md-6 offset-md-3">
+         
+        <div class="card" style="width: 18rem;" ng-repeat = "p in posts">
+
+            <img src="" alt="">
+            <div class="card-body">
+                <h5 class="card-title">{{p.title}}</h5>
+                <p class="card-text">{{p.card-body}}</p>
+                <a href="#"class= "btn btn -primary">{{p.num_likes}}</a>
+            </div>
+            <input type="file" name="imagen" file-model="myFile">
+            <button ng-click="uploadFile()">Enviar</button>
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</div>
