@@ -15,7 +15,7 @@ var tuister=angular.module('tuister',['ngRoute'])
         templateUrl: 'crearCuenta.html'
     })
     .when('/mostrar',{
-        controller: 'Demo',
+        controller: 'mostrarPosts',
         templateUrl: 'mostrar.html'
     })
     .when('/index',{

@@ -5,6 +5,8 @@ tuister.controller('Registro', function($scope, $http){
             console.log($scope.usuario)
             window.localStorage.setItem("token", $scope.repuesta.token);
             window.localStorage.setItem("user_id",$scope.respuesta.id);
+            window.location.href = "#/";
+
         });
     }
 

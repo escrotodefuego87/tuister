@@ -35,18 +35,6 @@ tuister.controller('Demo', function ($scope, $http, fileUpload, $routeParams) {
                 calificacion: al.calificacion
             }
     }
-    $scope.obtenerPosts = function () {
-        $http.get("http://tuister.com/posts").then(function (response) {
-
-            $scope.posts = response.data[0];
-            console.log($scope.posts);
-        });
-    }
-    $scope.obtenerPosts();
-
-
-
-
     
     $scope.crearCuenta = function () {
         $http.post("http://tuister.com/user", $scope.usuario).then(function (response) {
