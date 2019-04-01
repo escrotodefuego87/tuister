@@ -4,9 +4,8 @@ tuister.controller('login', function($scope, $http){
             $scope.respuesta = response.data;
             console.log($scope.respuesta);
             console.log(response);
-            window.localStorage.setItem("token", $scope.repuesta.token);
+            // window.localStorage.setItem("token", $scope.repuesta.token);
             window.localStorage.setItem("user_id", $scope.respuesta.id);
-            window.location.href = "#/";
 
         });
     }
