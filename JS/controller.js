@@ -36,15 +36,6 @@ tuister.controller('Demo', function ($scope, $http, fileUpload, $routeParams) {
             }
     }
     
-    $scope.crearCuenta = function () {
-        $http.post("http://tuister.com/user", $scope.usuario).then(function (response) {
-            $scope.respuesta = response.data;
-            console.log($scope.usuario)
-            window.localStorage.setItem("token", $scope.repuesta.token);
-            window.localStorage.setItem("user_id",$scope.respuesta.id);
-        });
-    }
-    
     $scope.uploadFile = function () {
         var file = $scope.myFile;
         var uploadUrl = "http://tuister.com/post";
